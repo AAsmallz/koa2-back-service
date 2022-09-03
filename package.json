@@ -1,0 +1,30 @@
+{
+  "name": "koa2-back-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon --exec babel-node ./src/app.js",
+    "build": "webpack",
+    "prod": "nodemon ../dist/bundle.js"
+  },
+  "keywords": [],
+  "author": "lxz",
+  "license": "ISC",
+  "dependencies": {
+    "koa-router": "^12.0.0",
+    "koa2": "^2.0.0-alpha.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.13",
+    "@babel/node": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "babel-loader": "^8.2.5",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "type": "module"
+}
